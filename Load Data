@@ -1,5 +1,0 @@
-from statsmodels.datasets import airpassengers
-data = airpassengers.load_pandas().data
-data['Month'] = pd.to_datetime(data['month'])
-data.set_index('Month', inplace=True)
-y = data['air']
