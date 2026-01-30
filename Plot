@@ -1,6 +1,0 @@
-plt.plot(train.index, train, label="Train")
-plt.plot(test.index, test, label="Test")
-plt.plot(test.index, ssm_forecast, label="SSM Forecast")
-plt.plot(test.index, sarima_forecast, label="SARIMA Forecast")
-plt.legend()
-plt.show()
