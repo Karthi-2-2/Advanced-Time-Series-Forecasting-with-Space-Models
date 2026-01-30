@@ -1,0 +1,3 @@
+sarima = SARIMAX(train, order=(1,1,1), seasonal_order=(1,1,1,12))
+sarima_fit = sarima.fit()
+sarima_forecast = sarima_fit.forecast(12)
