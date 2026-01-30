@@ -1,8 +1,0 @@
-rmse_ssm = np.sqrt(mean_squared_error(test, ssm_forecast))
-rmse_sarima = np.sqrt(mean_squared_error(test, sarima_forecast))
-
-mae_ssm = mean_absolute_error(test, ssm_forecast)
-mae_sarima = mean_absolute_error(test, sarima_forecast)
-
-print("SSM RMSE:", rmse_ssm, " MAE:", mae_ssm)
-print("SARIMA RMSE:", rmse_sarima, " MAE:", mae_sarima)
