@@ -1,3 +1,0 @@
-ssm = UnobservedComponents(train, level='local level', seasonal=12)
-ssm_fit = ssm.fit()
-ssm_forecast = ssm_fit.forecast(12)
