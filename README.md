@@ -1,4 +1,21 @@
-# Advanced-Time-Series-Forecasting-with-Space-Models
+ Advanced-Time-Series-Forecasting-with-Space-Models
+ Advanced Time Series Forecasting with State Space Models and Kalman Filtering
+
+ Overview
+This repository implements a fully custom State Space Model (SSM) and Kalman Filter from first principles for forecasting non-stationary seasonal time series. Unlike black-box statistical libraries, the model explicitly defines state transition and observation equations, estimates parameters using Maximum Likelihood Estimation (MLE), and benchmarks performance against SARIMA.
+
+ Model Architecture
+The state vector includes:
+- Local level component
+- Stochastic trend component
+- Seasonal component using cyclic dummy-variable formulation
+This structure enables flexible modeling of long-term growth, momentum shifts, and recurring seasonal effects.
+Parameter Estimation
+Model parameters (process and observation noise variances) are estimated via numerical MLE by maximizing the Kalman Filter innovation likelihood using L-BFGS-B optimization.
+
+Evaluation
+Performance is evaluated against SARIMA using RMSE and MAE metrics on a 12-step forecast horizon. Results show the SSM adapts more effectively to changing trends and evolving seasonality.
+Repository Structure
 
 🔹 Project Overview — Advanced Time Series Forecasting
 This project builds a custom State Space Model (SSM) using the Kalman Filter to forecast complex time series data. Instead of relying only on ARIMA or Prophet, it models hidden states such as trend, seasoality, and noise explicitly.
